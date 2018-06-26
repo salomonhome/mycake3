@@ -64,12 +64,15 @@ Router::scope('/', function (RouteBuilder $routes) {
       
     //   $routes->connect('/redirectcontroller2',['
     //      controller'=>'Redirects','action'=>'action2']);
-    $routes->connect('template',['controller'=>'Products','action'=>'view']);
-    $routes->connect('extend',['controller'=>'Extends','action'=>'index']);
-    $routes->connect('/users/add', ['controller' => 'Users', 'action' => 'add']);
-    $routes->connect('/users', ['controller' => 'Users', 'action' => 'index']);
-    $routes->connect('/users/edit', ['controller' => 'Users', 'action' => 'edit']);
-    $routes->connect('/users/delete', ['controller' => 'Users', 'action' => 'delete']);
+        $routes->connect('template',['controller'=>'Products','action'=>'view']);
+        $routes->connect('extend',['controller'=>'Extends','action'=>'index']);
+        $routes->connect('/users/add', ['controller' => 'Users', 'action' => 'add']);
+        $routes->connect('/users', ['controller' => 'Users', 'action' => 'index']);
+        $routes->connect('/users/edit', ['controller' => 'Users', 'action' => 'edit']);
+        $routes->connect('/users/delete', ['controller' => 'Users', 'action' => 'delete']);
+        $routes->connect('/auth',['controller'=>'Authexs','action'=>'index']);
+        $routes->connect('/login',['controller'=>'Authexs','action'=>'login']);
+        $routes->connect('/logout',['controller'=>'Authexs','action'=>'logout']);
      });
      $routes->connect('/redirectcontroller', ['controller' => 'Redirects', 'action' => 'action1']);
      $routes->connect('/redirectcontroller2', ['controller' => 'Redirects', 'action' => 'action2']);
