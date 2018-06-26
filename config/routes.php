@@ -73,6 +73,7 @@ Router::scope('/', function (RouteBuilder $routes) {
         $routes->connect('/auth',['controller'=>'Authexs','action'=>'index']);
         $routes->connect('/login',['controller'=>'Authexs','action'=>'login']);
         $routes->connect('/logout',['controller'=>'Authexs','action'=>'logout']);
+        $routes->connect('register',['controller'=>'Registration','action'=>'index']);
      });
      $routes->connect('/redirectcontroller', ['controller' => 'Redirects', 'action' => 'action1']);
      $routes->connect('/redirectcontroller2', ['controller' => 'Redirects', 'action' => 'action2']);
